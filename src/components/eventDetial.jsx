@@ -1,7 +1,11 @@
 import * as React from "react";
-import { useParams } from "react-router-dom";
+import { Router, useParams } from "react-router-dom";
+
+import { Link,Route } from "react-router-dom";
 import NoMatch from "./noMatch";
-import { Link } from "react-router-dom";
+import Modal from "./modal";
+
+
 import { getEventById, events,formatDate, formatToString,calcDuration} from "../data/events";
 
 function EventDetial() {
@@ -79,14 +83,20 @@ function EventDetial() {
         </div>{" "}
         <div className="flex mx-auto mb">
           <Link
-            to="/signup"
+            to={
+            {
+              pathname: '/signup',
+              state: {event: event}
+            }
+            }
             className="relative flex h-12 items-center justify-center group "
           >
             <div className="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-vg text-white ">
-              Inschrijven
+              Sign up
             </div>{" "}
             <div className="absolute bottom-0 right-0 w-full h-full border z-10 border-primary-accent "></div>
           </Link>
+         
         </div>
       </div>
     </article>

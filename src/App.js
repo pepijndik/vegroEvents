@@ -1,11 +1,20 @@
 import "./App.css";
 import * as React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,  useLocation } from "react-router-dom";
 import EventList from "./components/eventList";
 import EventDetial from "./components/eventDetial";
+import EventSignUp from "./components/eventSignUp";
 import NoMatch from "./components/noMatch";
+
 import { Link } from "react-router-dom";
 function App() {
+  let location = useLocation();
+
+  // The `backgroundLocation` state is the location that we were at when one of
+  // the gallery links was clicked. If it's there, use it as the location for
+  // the <Routes> so we show the gallery in the background, behind the modal.
+  let state = location.state;
+
   return (
     <div className="App">
       <header>
@@ -72,12 +81,11 @@ function App() {
         </nav>
       </header>
       <div className="container pt-16 sm:pt-10 xl:pt-0 mt-10 sm:mt-20 lg:mt-20 xl:mt-52 px-6 lg:px-10 mb-auto mx-auto flex flex-col items-left justify-center">
-        <Routes>
+        <Routes location={state?.backgroundLocation || location}>
           <Route path="/" element={<EventList></EventList>}></Route>
-          <Route path="/signup" element={<EventList></EventList>}></Route>
-          
+       
             <Route path="/event/:id" element={<EventDetial />} />
-        
+          <Route exact path="/signup" element={<EventSignUp/>}/>
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </div>

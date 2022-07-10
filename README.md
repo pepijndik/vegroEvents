@@ -11,6 +11,12 @@ Laten zien hoe je dit zou aanpakken.
 En hoe ver kom je.
 
 Wanneer denk je dit op te leveren.
+## Todo
+- [ ] sign up to a event
+- [ x ] show all events
+- [ x ] show event detials
+- [ x ] Lookup different idea's on pintrest
+
 
 ## View Project only:
 got to: 'https://pepijndik.github.io/vegroEvents'
