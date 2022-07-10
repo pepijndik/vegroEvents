@@ -13,7 +13,7 @@ En hoe ver kom je.
 Wanneer denk je dit op te leveren.
 
 ## View Project only:
-got to: 'https://pepijndik.github.io/VegroEvents'
+got to: 'https://pepijndik.github.io/vegroEvents'
 ## run Project
 ```npm
 npm install
