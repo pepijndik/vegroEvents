@@ -9,4 +9,11 @@ Zelf bepalen hoe dit er uit moet zien.
 Verwachting:
 Laten zien hoe je dit zou aanpakken.
 En hoe ver kom je.
+
 Wanneer denk je dit op te leveren.
+
+## run Project
+```npm
+npm install
+npm run start
+```
