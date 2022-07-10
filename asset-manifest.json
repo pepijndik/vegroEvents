@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vegroEvents/static/css/main.44dab381.css",
-    "main.js": "/vegroEvents/static/js/main.b443148b.js",
-    "static/js/787.b6decdc3.chunk.js": "/vegroEvents/static/js/787.b6decdc3.chunk.js",
-    "index.html": "/vegroEvents/index.html",
-    "main.44dab381.css.map": "/vegroEvents/static/css/main.44dab381.css.map",
-    "main.b443148b.js.map": "/vegroEvents/static/js/main.b443148b.js.map",
-    "787.b6decdc3.chunk.js.map": "/vegroEvents/static/js/787.b6decdc3.chunk.js.map"
+    "main.css": "/static/css/main.603b6191.css",
+    "main.js": "/static/js/main.a3105035.js",
+    "static/js/787.b6decdc3.chunk.js": "/static/js/787.b6decdc3.chunk.js",
+    "index.html": "/index.html",
+    "main.603b6191.css.map": "/static/css/main.603b6191.css.map",
+    "main.a3105035.js.map": "/static/js/main.a3105035.js.map",
+    "787.b6decdc3.chunk.js.map": "/static/js/787.b6decdc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44dab381.css",
-    "static/js/main.b443148b.js"
+    "static/css/main.603b6191.css",
+    "static/js/main.a3105035.js"
   ]
 }
